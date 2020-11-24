@@ -24,6 +24,7 @@ public class App {
                             textArea_B.setText("输入错误");
                             textArea_B.setBackground(Color.red);
                         }
+                        textArea_A.setText("");
                     }
                 }
             });

@@ -1,50 +1,21 @@
 package pac;
 
-public class Find {
-    void zero(int[][] array2d,int rm){
-        for(int i=0;i<array2d.length;i++){
-            for(int j=0;j<array2d[i].length;j++){
-                if(array2d[i][j]==rm){
-                    System.out.println("x:"+(i+1)+" "+"y:"+(j+1));
-                }
-            }
-        }
-    }
-    void R_up(int[][] array2d,int rm){
-        for(int i=0;i<array2d.length;i++){
-            for(int j=0;j<array2d[i].length;j++){
-                if(array2d[i][j]==rm){
-                    System.out.println("x:"+(i+1)+" "+"y:"+(j));
-                }
-            }
-        }
-    }
-    void R_down(int[][] array2d,int rm){
-        for(int i=0;i<array2d.length;i++){
-            for(int j=0;j<array2d[i].length;j++){
-                if(array2d[i][j]==rm){
-                    System.out.println("x:"+(i+1)+" "+"y:"+(j+2));
-                }
-            }
-        }
-    }
-    void R_left(int[][] array2d,int rm){
-        for(int i=0;i<array2d.length;i++){
-            for(int j=0;j<array2d[i].length;j++){
-                if(array2d[i][j]==rm){
-                    System.out.println("x:"+(i)+" "+"y:"+(j+1));
-                }
-            }
-        }
-    }
-    void R_rigth(int[][] array2d,int rm){
-        for(int i=0;i<array2d.length;i++){
-            for(int j=0;j<array2d[i].length;j++){
-                if(array2d[i][j]==rm){
-                    System.out.println("x:"+(i+2)+" "+"y:"+(j+1));
-                }
-            }
-        }
-    }
+public class App{
+    public static void main(String[] args) {
+        int array2d[][]={
+            {1,2,3,4,5,6},
+            {7,8,9,10,0,12},
+            {8,8,9,10,11,12},
+            {7,8,3,10,11,12},
+            {88,66,92,102,151,999}
+        };
 
+        Find find=new Find();
+        find.zero(array2d,0);
+        find.R_up(array2d,5);
+        find.R_down(array2d,11);
+        find.R_left(array2d,10);
+        find.R_rigth(array2d,12);
+
+    }
 }

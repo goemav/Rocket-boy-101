@@ -42,7 +42,6 @@ public class Find {
             for(int j=0;j<array2d[i].length;j++){
                 if(array2d[i][j]==rm){
                     System.out.println("x:"+(i)+" "+"y:"+(j));
-                    break;
                 }
             }
         }
